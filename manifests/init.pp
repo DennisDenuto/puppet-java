@@ -4,12 +4,12 @@
 #
 #    include java
 class java (
-  $base_download_url = 'https://s3.amazonaws.com/boxen-downloads/java'
+  $base_download_url = 'https://s3-us-west-2.amazonaws.com/java-8u5'
 ) {
   include boxen::config
 
-  $jre_url = "${base_download_url}/jre-8-macosx-x64.dmg"
-  $jdk_url = "${base_download_url}/jdk-8-macosx-x64.dmg"
+  $jre_url = "${base_download_url}/jre-8u5-macosx-x64.dmg"
+  $jdk_url = "${base_download_url}/jdk-8u5-macosx-x64.dmg"
   $wrapper = "${boxen::config::bindir}/java"
   $jdk_dir = "/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk"
   $sec_dir = "${jdk_dir}/Contents/Home/jre/lib/security"

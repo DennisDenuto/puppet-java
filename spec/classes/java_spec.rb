@@ -15,14 +15,14 @@ describe "java" do
       :ensure   => 'present',
       :alias    => 'java-jre',
       :provider => 'pkgdmg',
-      :source   => 'https://downloads.test/java/jre-8-macosx-x64.dmg'
+      :source   => 'https://downloads.test/java/jre-8u5-macosx-x64.dmg'
     })
 
     should contain_package('jdk-8.dmg').with({
       :ensure   => 'present',
       :alias    => 'java',
       :provider => 'pkgdmg',
-      :source   => 'https://downloads.test/java/jdk-8-macosx-x64.dmg'
+      :source   => 'https://downloads.test/java/jdk-8u5-macosx-x64.dmg'
     })
 
     should contain_file('/test/boxen/bin/java').with({
