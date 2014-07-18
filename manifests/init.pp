@@ -11,7 +11,7 @@ class java (
   $jre_url = "${base_download_url}/jre-8u5-macosx-x64.dmg"
   $jdk_url = "${base_download_url}/jdk-8u5-macosx-x64.dmg"
   $wrapper = "${boxen::config::bindir}/java"
-  $jdk_dir = "/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk"
+  $jdk_dir = "/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk"
   $sec_dir = "${jdk_dir}/Contents/Home/jre/lib/security"
 
   package {
